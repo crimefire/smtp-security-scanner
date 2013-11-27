@@ -1,0 +1,438 @@
+SMTP Tool results: 
+
+-----------[ RESULTS ]----------
+
+Is mail server:        YES
+Version:               
+Open relay:            NO
+Verify user command:   YES
+Accept @postmaster:    NO
+Accept @abuse:         NO
+Filters attachemnts:   ...
+Blacklist occurence:   ...
+SPF:                   NO
+Spoofing check 1:      ?
+Spoofing check 2:      ...
+Help command:          NO
+Encrypted auth:        YES
+Cleartext login:       NO
+SASL methods:          -
+Authentication:        YES
+-------------[ SPF ]------------
+
+- SPF records:
+
+[No SPF records found]
+
+------------[ BLACKLIST ]-----------
+
+Blacklisted:           ?
+
+
+-------[ CONSOLE OUTPUT ]-------
+SMTP Tool. Ready.
+Test started.
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+-----------------------------------------------------
+------------------ Open Relay Test ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 Bye
+
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+*Starting Open Relay Test.
+>>> HELO netprotect.ch
+<<< 250 zm01.octotelematics.net
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@netprotect.ch>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver@muenchow.ch>
+<<< 554 5.7.1 <oliver@muenchow.ch>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@netprotect.ch>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:oliver@muenchow.ch
+<<< 554 5.7.1 <oliver@muenchow.ch>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver@muenchow.ch>
+<<< 554 5.7.1 <oliver@muenchow.ch>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver@muenchow.ch>
+<<< 554 5.7.1 <oliver@muenchow.ch>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver@muenchow.ch>
+<<< 554 5.7.1 <oliver@muenchow.ch>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@www.zm01.octotelematics.net>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver@muenchow.ch>
+<<< 554 5.7.1 <oliver@muenchow.ch>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver%muenchow.ch@[89.97.181.87]>
+<<< 554 5.7.1 <oliver%muenchow.ch@[89.97.181.87]>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver%muenchow.ch@www.zm01.octotelematics.net>
+<<< 554 5.7.1 <oliver%muenchow.ch@www.zm01.octotelematics.net>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<"oliver@muenchow.ch">
+<<< 554 5.7.1 <oliver@muenchow.ch>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<"oliver%muenchow.ch">
+<<< 504 5.5.2 <oliver%muenchow.ch>: Recipient address rejected: need fully-qualified address
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver@muenchow.ch@[89.97.181.87]>
+<<< 554 5.7.1 <oliver@muenchow.ch@[89.97.181.87]>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<"oliver@muenchow.ch"@[89.97.181.87]>
+<<< 554 5.7.1 <oliver@muenchow.ch@[89.97.181.87]>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver@muenchow.ch@www.zm01.octotelematics.net>
+<<< 554 5.7.1 <oliver@muenchow.ch@www.zm01.octotelematics.net>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<@[89.97.181.87]:oliver@muenchow.ch>
+<<< 554 5.7.1 <oliver@muenchow.ch>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<@www.zm01.octotelematics.net:oliver@muenchow.ch>
+<<< 554 5.7.1 <oliver@muenchow.ch>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<muenchow.ch!oliver>
+<<< 504 5.5.2 <muenchow.ch!oliver>: Recipient address rejected: need fully-qualified address
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<muenchow.ch!oliver@[89.97.181.87]>
+<<< 554 5.7.1 <muenchow.ch!oliver@[89.97.181.87]>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<muenchow.ch!oliver@www.zm01.octotelematics.net>
+<<< 554 5.7.1 <muenchow.ch!oliver@www.zm01.octotelematics.net>: Relay access denied
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver%muenchow.ch@>
+<<< 504 5.5.2 <oliver%muenchow.ch@>: Recipient address rejected: need fully-qualified address
+
+>>> RSET
+<<< 250 2.0.0 Ok
+
+>>> MAIL FROM:<oliver@[89.97.181.87]>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<oliver@muenchow.ch@>
+<<< 504 5.5.2 <oliver@muenchow.ch@>: Recipient address rejected: need fully-qualified address
+
+-----------------------------------------------------
+------------------   Verify Test   ------------------
+Disconnecting...
+>>> QUIT
+Error (10054)
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+*Starting Verify Command Test.
+>>> HELO mozilla
+<<< 250 zm01.octotelematics.net
+
+>>> VRFY frankblack@zm01.octotelematics.net
+<<< 554 5.7.1 <frankblack@zm01.octotelematics.net>: Relay access denied
+
+-----------------------------------------------------
+------------------   Postman Test  ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 Bye
+
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+>>> HELO mozilla
+<<< 250 zm01.octotelematics.net
+
+>>> MAIL FROM:<donald@duck.com>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<postmaster@zm01.octotelematics.net>
+<<< 554 5.7.1 <postmaster@zm01.octotelematics.net>: Relay access denied
+
+-----------------------------------------------------
+------------------   Abuse Test    ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 Bye
+
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+>>> HELO mozilla
+<<< 250 zm01.octotelematics.net
+
+>>> MAIL FROM:<donald@duck.com>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<abuse@zm01.octotelematics.net>
+<<< 554 5.7.1 <abuse@zm01.octotelematics.net>: Relay access denied
+
+-----------------------------------------------------
+------------------ Spoofing 1 Test ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 Bye
+
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+*Starting Spoofing Test.
+>>> HELO mozilla
+<<< 250 zm01.octotelematics.net
+
+>>> MAIL FROM:<adhha@onet.pl>
+<<< 250 2.1.0 Ok
+
+>>> RCPT TO:<aeheah@onet.pl>
+<<< 554 5.7.1 <aeheah@onet.pl>: Relay access denied
+
+-----------------------------------------------------
+------------------ Spoofing 2 Test ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 Bye
+
+Connecting...OK
+<<< 220 tux23.hoststar.ch ESMTP Sendmail 8.13.8/8.12.11; Tue, 14 Aug 2012 23:46:35 +0200
+
+*Starting Spoofing check 2.
+>>> EHLO mozilla
+<<< 250-tux23.hoststar.ch Hello 176-96-167-187.nstream.pl [176.96.167.187] (may be forged), pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 40971520
+250-DSN
+250-AUTH LOGIN PLAIN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+>>> AUTH PLAIN
+<<< 334 
+
+>>> AHdlYjM4MHAxAGFlZw==
+<<< 535 5.7.0 authentication failed
+
+-----------------------------------------------------
+------------------    Help Test    ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 tux23.hoststar.ch closing connection
+
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+*Starting Help command Test.
+>>> HELO mozilla
+<<< 250 zm01.octotelematics.net
+
+>>> HELP
+<<< 502 5.5.2 Error: command not recognized
+
+-----------------------------------------------------
+------------------ Encry.Auth Test ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 Bye
+
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+*Starting Encrypted authentication Test.
+>>> EHLO mozilla
+<<< 250-zm01.octotelematics.net
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+
+-----------------------------------------------------
+------------------ Cleartext Test  ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 Bye
+
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+*Starting Cleartext login Test.
+>>> EHLO mozilla
+<<< 250-zm01.octotelematics.net
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+
+-----------------------------------------------------
+------------------    SASL Test    ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 Bye
+
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+*Starting SASL Login methods Test.
+>>> EHLO mozilla
+<<< 250-zm01.octotelematics.net
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+
+-----------------------------------------------------
+------------------    Auth. Test   ------------------
+Disconnecting...
+>>> QUIT
+<<< 221 2.0.0 Bye
+
+Connecting...OK
+<<< 220 zm01.octotelematics.net ESMTP Postfix
+
+*Starting Authentication Test.
+>>> EHLO mozilla
+<<< 250-zm01.octotelematics.net
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+
+-----------------------------------------------------
+------------------     SPF Test    ------------------
+*Retrieving SPF record.
+No SPF records found.
+-----------------------------------------------------
+------------------  Blacklist Test ------------------
+*Retrieving Blacklist record.
+Unable to get Blacklist record.
+-----------------------------------------------------
+TEST COMPLETED.
