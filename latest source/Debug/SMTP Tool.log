@@ -1,0 +1,81 @@
+﻿Build started 06.09.2012 13:53:16.
+     1>Project "C:\Users\875144\Desktop\Development\6_SMTP SCAN\SMTP Source 5 (1.4)\SMTP Tool.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\SMTP Tool.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D CURL_STATICLIB /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\SMTP Tool.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D CURL_STATICLIB /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt curl_tools.cpp DlgMain.cpp DlgSettings.cpp Serial.cpp shared.cpp "SMTP Tool.cpp" "SMTP ToolDlg.cpp"
+         SMTP ToolDlg.cpp
+         SMTP Tool.cpp
+         shared.cpp
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\shared.cpp(326): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\shared.cpp(587): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\shared.cpp(639): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\shared.cpp(763): error C2664: '_wtoi' : cannot convert parameter 1 from 'CString' to 'const wchar_t *'
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\shared.cpp(1386): error C2039: 'SetWindowTextW' : is not a member of 'CWnd'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afxwin.h(2286) : see declaration of 'CWnd'
+         Serial.cpp
+         DlgSettings.cpp
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgsettings.cpp(220): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgsettings.cpp(367): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         DlgMain.cpp
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(134): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(339): error C2039: 'SetWindowTextW' : is not a member of 'CWnd'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afxwin.h(2286) : see declaration of 'CWnd'
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(375): error C2039: 'GetWindowTextW' : is not a member of 'CEdit'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afxwin.h(3947) : see declaration of 'CEdit'
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(430): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(431): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(432): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(433): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(434): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(435): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(436): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(437): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(438): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(439): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(440): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(441): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(442): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(443): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(444): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(445): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [24]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(452): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [3]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\dlgmain.cpp(456): error C2664: 'wresult' : cannot convert parameter 1 from 'const char [26]' to 'const wchar_t *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+         curl_tools.cpp
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\curl_tools.cpp(132): error C2664: 'wcstombs_s' : cannot convert parameter 4 from 'CString' to 'const wchar_t *'
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\curl_tools.cpp(147): error C2440: 'initializing' : cannot convert from 'char *' to 'LPWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\curl_tools.cpp(206): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+     1>c:\users\875144\desktop\development\6_smtp scan\smtp source 5 (1.4)\smtp tooldlg.cpp(184): warning C4700: uninitialized local variable 'ble2' used
+     1>Done Building Project "C:\Users\875144\Desktop\Development\6_SMTP SCAN\SMTP Source 5 (1.4)\SMTP Tool.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:23.08

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SMTP Tool">
+</Property><Property Name="Solution File" Value="C:\Users\875144\Desktop\Development\6_SMTP SCAN\SMTP Source 5 (1.4)\SMTP Tool.sln">
+</Property><Property Name="Date" Value="Donnerstag, 6. September 2012">
+</Property><Property Name="Time" Value="13:48:56">
+</Property></Properties><Event ErrorLevel="0" Project="SMTP Tool" Source="SMTP Tool.vcproj" Description="Converting project file 'C:\Users\875144\Desktop\Development\6_SMTP SCAN\SMTP Source 5 (1.4)\SMTP Tool.vcproj'.">
+</Event><Event ErrorLevel="1" Project="SMTP Tool" Source="SMTP Tool.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="SMTP Tool" Source="SMTP Tool.vcproj" Description="Done converting to new project file 'C:\Users\875144\Desktop\Development\6_SMTP SCAN\SMTP Source 5 (1.4)\SMTP Tool.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="SMTP Tool" Source="SMTP Tool.vcproj" Description="Converted">
+</Event></UpgradeLog>
